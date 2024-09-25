@@ -1,0 +1,184 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio - Módulo I</title>
+</head>
+<body>
+    <h1 id="home">Módulo I - Primeiros Passos com <abbr title="Hypertext Markup Language">HTML</abbr></h1>
+    <hr />
+
+    <h2>Índice</h2>
+    <ul>
+        <li>Apresentação do Curso</li>
+        <ul>
+            <li><a href="#history">História da Web</a></li>
+            <li><a href="#client">O que são <strong>Clientes</strong> ?</a></li>
+            <li><a href="#server">O que são <strong>Servers</strong> ?</a></li>
+            <li><a href="#lang">Linguagens de Programação</a></li>
+        </ul>
+        <li>Introdução ao <abbr title="Hypertext Markup Language">HTML</abbr> na Prática</li>
+        <ul>
+            <li><a href="#tool">Ferramentas Utilizadas</a></li>
+            <li><a href="#element">Inspetor de Elementos</a></li>
+            <li><a href="#html">Estrutura Básica do <abbr title="Hypertext Markup Language">HTML</abbr></a></li>
+            <li><a href="#talktags">Falando sobre Tags</a></li>
+            <li><a href="#tags">Atributos das Tags</a></li>
+            <li><a href="#text">Textos</a></li>
+            <li><a href="#order">Lista Ordenadas e Não Ordenadas</a></li>
+            <li><a href="#links">Links</a></li>
+        </ul>
+    </ul> 
+
+    <h2>Apresentação do Curso</h2>
+    <hr />
+
+    <h3 id="history">História da Web  <font color="red" size="1"><a href="#home"> (Voltar)</a></font></h3>
+    <p>A Web, também conhecida como <abbr title="World Wide Web">WWW</abbr>, foi criada em 1989 por Tim Berners-Lee no CERN, e é um sistema de documentos interconectados acessados via internet. Originalmente, a Web foi desenvolvida para facilitar o compartilhamento de informações entre cientistas. Em 1993, a Web tornou-se disponível publicamente e gratuitamente, o que impulsionou seu crescimento rápido com o desenvolvimento de navegadores como Mosaic e Netscape. Isso levou à criação de milhares de sites e à popularização da Web como a conhecemos hoje​.</p>
+
+    <h3 id="client">O que são Clientes? <font color="red" size="1"><a href="#home"> (Voltar)</a></font></h3>
+    <p>No universo da web, o termo "clientes" é fundamental para entender a interação entre diferentes partes de um sistema. Ele se refere, predominantemente, aos navegadores que os usuários utilizam para acessar a internet, mas também abrange o conceito de comunicação entre cliente e servidor, um pilar da arquitetura de aplicações web.</p>
+    <p>Os navegadores web, como Google Chrome, Mozilla Firefox e Safari, atuam como clientes que interpretam e renderizam conteúdo web. Quando um usuário acessa um site, o navegador é responsável por interpretar o código <abbr title="Hypertext Markup Language">HTML</abbr>, <abbr title="Cascading Style Sheets">CSS</abbr> e JavaScript que compõe a página. O <abbr title="Hypertext Markup Language">HTML</abbr> estrutura o conteúdo, o <abbr title="Cascading Style Sheets">CSS</abbr> o estiliza e o JavaScript adiciona interatividade. Essa interpretação é essencial para a experiência do usuário, pois transforma dados brutos em uma interface visual interativa.</p>
+    <p>Por exemplo, quando um usuário insere um URL em seu navegador, ele inicia uma série de eventos. O navegador envia uma requisição <abbr title="Hypertext Transfer Protocol">HTTP</abbr> ao servidor que hospeda o site, solicitando os recursos necessários para exibir a página. Essa comunicação é baseada no protocolo <abbr title="Hypertext Transfer Protocol">HTTP</abbr> (ou <abbr title="Hypertext Transfer Protocol Secure">HTTPS</abbr>, para conexões seguras), que define como as mensagens são formatadas e transmitidas.</p>
+    <p>Em resumo, os clientes no contexto de <abbr title="Hypertext Markup Language">HTML</abbr> e desenvolvimento web desempenham um papel vital na experiência do usuário e na comunicação entre front-end e back-end. Eles não apenas interpretam e apresentam dados, mas também são responsáveis por facilitar a interação do usuário com as aplicações web. Compreender essa dinâmica é fundamental para qualquer desenvolvedor que busca criar aplicações web eficazes e intuitivas.</p>
+
+    <h3 id="server">O que são Servers? <font color="red" size="1"><a href="#home"> (Voltar)</a></font></h3>
+    <p>O termo servidor refere-se a um sistema que entrega arquivos e recursos da web a clientes, tipicamente navegadores. Esses arquivos e recursos podem incluir documentos <abbr title="Hypertext Markup Language">HTML</abbr>, folhas de estilo <abbr title="Cascading Style Sheets">CSS</abbr>, scripts JavaScript, imagens e outros tipos de mídia. O servidor desempenha um papel fundamental na arquitetura da web, facilitando a comunicação entre o cliente (<del>navegador</del>) e os dados ou conteúdos armazenados.</p>
+    <p>No contexto do <abbr title="Hypertext Markup Language">HTML</abbr>, o servidor é um componente vital que permite a entrega de conteúdo e a interação com usuários através da web. Ele processa requisições, fornece arquivos <abbr title="Hypertext Markup Language">HTML</abbr> e recursos associados, e facilita a criação de experiências dinâmicas e interativas. Compreender o papel do servidor é crucial para desenvolvedores que desejam construir aplicações web eficazes e responsivas.</p>
+
+    <h3 id="lang">Linguagens de Programação <font color="red" size="1"><a href="#home"> (Voltar)</a></font></h3>
+    <p>Linguagens de programação são conjuntos de regras e instruções que permitem aos programadores escrever códigos que um computador pode entender e executar. Essas linguagens são usadas para desenvolver software, scripts e outras aplicações que podem executar tarefas específicas, desde operações simples até sistemas complexos.</p>
+    <p>As linguagens de programação podem ser divididas em várias categorias, incluindo:</p>
+    <ul>
+        <li><strong>Linguagens de Baixo Nível:</strong> Estas são mais próximas do código de máquina e incluem Assembly. Elas oferecem maior controle sobre o hardware, mas são mais difíceis de usar.</li>
+        <li><strong>Linguagens de Alto Nível:</strong> Estas são mais abstratas e fáceis de entender, como Python, Java e C#. Elas permitem que os programadores escrevam código que é mais legível e compreensível para os humanos.</li>
+        <li><strong>Linguagens de Script:</strong> Estas são frequentemente usadas para automação de tarefas e desenvolvimento web. Exemplos incluem JavaScript e PHP.</li>
+    </ul>
+    <p><strong>Linguagens de Programação Usadas em Conjunto com <abbr title="Hypertext Markup Language">HTML</abbr></strong></p>
+    <p><abbr title="Hypertext Markup Language">HTML</abbr> é a linguagem de marcação padrão para criar páginas da web. Embora o <abbr title="Hypertext Markup Language">HTML</abbr> seja fundamental para estruturar o conteúdo, outras linguagens de programação são frequentemente usadas em conjunto para adicionar interatividade, estilo e lógica às páginas da web. Aqui estão algumas das principais linguagens que podem ser usadas em conjunto com <abbr title="Hypertext Markup Language">HTML</abbr>:</p>
+    <ol>
+        <li><abbr title="Cascading Style Sheets">CSS</abbr></li>
+        <li>JavaScript</li>
+        <li>PHP</li>
+        <li>Python</li>
+        <li>Ruby</li>
+        <li>TypeScript</li>
+    </ol>
+    <p>Linguagens de programação desempenham um papel vital no desenvolvimento de software e aplicações web. <abbr title="Hypertext Markup Language">HTML</abbr> serve como a estrutura básica para a criação de páginas da web, mas para criar experiências interativas e dinâmicas, é essencial integrar outras linguagens, como <abbr title="Cascading Style Sheets">CSS</abbr> e JavaScript. O uso combinado dessas linguagens permite que os desenvolvedores criem aplicações web ricas, funcionais e atraentes, atendendo às necessidades e expectativas dos usuários modernos.</p>
+
+    <h2>Introdução ao <abbr title="Hypertext Markup Language">HTML</abbr> na Prática</h2>
+    <hr />
+
+    <h3 id="tool">Ferramentas Utilizadas <font color="red" size="1"><a href="#home"> (Voltar)</a></font></h3>
+
+    <p>Visual Studio Code é um editor de código-fonte desenvolvido pela Microsoft, amplamente utilizado por desenvolvedores devido à sua interface amigável e rica funcionalidade. Ele suporta várias linguagens de programação e possui um vasto ecossistema de extensões que facilitam o desenvolvimento. Entre as extensões úteis para <abbr title="Hypertext Markup Language">HTML</abbr>, podemos destacar:</p>
+    <ul>
+        <li><strong><abbr title="Hypertext Markup Language">HTML</abbr> Snippets:</strong> Fornece atalhos e snippets que ajudam a acelerar a escrita de código <abbr title="Hypertext Markup Language">HTML</abbr> comum, economizando tempo ao evitar a digitação completa de tags.</li>
+        <li><strong>Live Server:</strong> Permite visualizar as alterações em tempo real no navegador, recarregando a página automaticamente sempre que o código é salvo, o que melhora o fluxo de trabalho.</li>
+        <li><strong>Prettier:</strong> Uma ferramenta de formatação de código que garante que o <abbr title="Hypertext Markup Language">HTML</abbr> seja formatado de forma consistente, melhorando a legibilidade e a organização do código.</li>
+        <li><strong>Emmet:</strong> Uma poderosa ferramenta que permite escrever código <abbr title="Hypertext Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr> de forma mais rápida através de abreviações que são expandidas em tags completas.</li>
+        <li><strong>IntelliSense for <abbr title="Cascading Style Sheets">CSS</abbr> class names:</strong> Fornece sugestões de nomes de classes <abbr title="Cascading Style Sheets">CSS</abbr> enquanto você digita, ajudando a evitar erros de digitação e a encontrar rapidamente classes existentes.</li>
+    </ul>
+
+    <h3 id="element">Inspetor de Elementos  <font color="red" size="1"><a href="#home"> (Voltar)</a></font></h3>
+    <p>O Inspetor de Elementos é uma ferramenta de desenvolvimento integrada nos navegadores modernos, como Chrome e Firefox. Essa ferramenta permite que os desenvolvedores visualizem e editem o código <abbr title="Hypertext Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr> de uma página da web em tempo real. Você pode usar o inspetor para:</p>
+    <ul>
+        <li>Examinar a estrutura de elementos <abbr title="Hypertext Markup Language">HTML</abbr>.</li>
+        <li>Modificar o <abbr title="Cascading Style Sheets">CSS</abbr> aplicado a esses elementos e ver as alterações imediatamente no navegador.</li>
+        <li>Depurar problemas de layout e estilos ao observar como diferentes regras <abbr title="Cascading Style Sheets">CSS</abbr> afetam a aparência da página.</li>
+        <li>Visualizar e alterar atributos de elementos, como classes, IDs e estilos inline.</li>
+    </ul>
+
+    <h3 id="<abbr title="Hypertext Markup Language">HTML</abbr>">Estrutura Básica do <abbr title="Hypertext Markup Language">HTML</abbr>  <font color="red" size="1"><a href="#home"> (Voltar)</a></font></h3>
+    <p>A estrutura básica do <abbr title="Hypertext Markup Language">HTML</abbr> é o esqueleto fundamental de qualquer documento <abbr title="Hypertext Markup Language">HTML</abbr>. Uma página <abbr title="Hypertext Markup Language">HTML</abbr> típica segue este formato:</p>
+    <pre>
+        <code>
+        &lt;!DOCTYPE <abbr title="Hypertext Markup Language">HTML</abbr>&gt;
+        &lt;<abbr title="Hypertext Markup Language">HTML</abbr> lang="pt-BR"&gt;
+        &lt;head&gt;
+            &lt;meta charset="UTF-8"&gt;
+            &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+            &lt;title&gt;Título da Página&lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;h1&gt;Bem-vindo ao Meu Site!&lt;/h1&gt;
+            &lt;p&gt;Este é um parágrafo de exemplo.&lt;/p&gt;
+        &lt;/body&gt;
+        &lt;/<abbr title="Hypertext Markup Language">HTML</abbr>&gt;
+        </code>
+    </pre>
+    <p>Nesse exemplo:</p>
+    <ul>
+        <li><strong>&lt;!DOCTYPE <abbr title="Hypertext Markup Language">HTML</abbr>&gt;:</strong> Declara o tipo de documento, informando ao navegador que este é um documento <abbr title="Hypertext Markup Language">HTML</abbr>5.</li>
+        <li><strong>&lt;<abbr title="Hypertext Markup Language">HTML</abbr>&gt;:</strong> A tag raiz que envolve todo o conteúdo da página.</li>
+        <li><strong>&lt;head&gt;:</strong> Contém metadados sobre o documento, como o conjunto de caracteres e o título que aparece na aba do navegador.</li>
+        <li><strong>&lt;body&gt;:</strong> Onde o conteúdo visível da página é colocado, incluindo textos, imagens e links.</li>
+    </ul>
+
+    <h3 id="talktags">Falando sobre Tags  <font color="red" size="1"><a href="#home"> (Voltar)</a></font></h3>
+    <p>As Tags são os elementos fundamentais do <abbr title="Hypertext Markup Language">HTML</abbr> que definem a estrutura e o conteúdo de uma página. Elas são usadas para organizar o conteúdo de maneira semântica, cada uma com um propósito específico. Exemplos de tags comuns incluem:</p>
+    <ul>
+        <li><strong>&lt;p&gt;:</strong> Usada para criar parágrafos.</li>
+        <li><strong>&lt;a&gt;:</strong> Usada para criar links.</li>
+        <li><strong>&lt;img&gt;:</strong> Usada para inserir imagens.</li>
+        <li><strong>&lt;div&gt;:</strong> Um contêiner genérico usado para agrupar conteúdo.</li>
+        <li><strong>&lt;span&gt;:</strong> Usada para aplicar estilos em partes específicas de texto dentro de um parágrafo.</li>
+    </ul>
+
+    <h3 id="tags">Atributos das Tags  <font color="red" size="1"><a href="#home"> (Voltar)</a></font></h3>
+    <p>Os Atributos das Tags fornecem informações adicionais sobre os elementos <abbr title="Hypertext Markup Language">HTML</abbr>. Eles seguem o formato <code>nome="valor"</code> e são usados para modificar o comportamento ou a aparência das tags. Exemplos incluem:</p>
+    <ul>
+        <li><strong>href:</strong> Usado na tag &lt;a&gt; para especificar o URL de destino do link.</li>
+        <li><strong>src:</strong> Usado na tag &lt;img&gt; para especificar o caminho da imagem.</li>
+        <li><strong>alt:</strong> Usado na tag &lt;img&gt; para fornecer uma descrição da imagem, importante para acessibilidade.</li>
+        <li><strong>class:</strong> Usado para aplicar estilos <abbr title="Cascading Style Sheets">CSS</abbr> a um grupo de elementos.</li>
+        <li><strong>id:</strong> Usado para identificar um elemento específico de forma única.</li>
+    </ul>
+
+    <h3 id="text">Textos  <font color="red" size="1"><a href="#home"> (Voltar)</a></font></h3>
+    <p>Os Textos em <abbr title="Hypertext Markup Language">HTML</abbr> são representados por várias tags que definem diferentes níveis de importância e estilo. Exemplos incluem:</p>
+    <ul>
+        <li><strong>&lt;h1&gt; a &lt;h6&gt;:</strong> Usadas para definir títulos e subtítulos, onde &lt;h1&gt; é o mais importante e &lt;h6&gt; o menos importante.</li>
+        <li><strong>&lt;p&gt;:</strong> Usada para parágrafos de texto.</li>
+        <li><strong>&lt;em&gt;:</strong> Usada para enfatizar texto, geralmente exibido em itálico.</li>
+        <li><strong>&lt;strong&gt;:</strong> Usada para destacar texto, geralmente exibido em negrito.</li>
+        <li><strong>&lt;blockquote&gt;:</strong> Usada para citar uma parte de texto de outra fonte, geralmente exibida com recuo.</li>
+    </ul>
+
+    <h3 id="order">Lista Ordenadas e Não Ordenadas  <font color="red" size="1"><a href="#home"> (Voltar)</a></font></h3>
+    <p>As Listas Ordenadas e Não Ordenadas são usadas para agrupar itens relacionados. A lista ordenada é numerada, enquanto a lista não ordenada é apenas marcada. Exemplos incluem:</p>
+    <pre>
+        <code>
+        &lt;ol&gt;
+            &lt;li&gt;Primeiro Item&lt;/li&gt;
+            &lt;li&gt;Segundo Item&lt;/li&gt;
+        &lt;/ol&gt;
+
+        &lt;ul&gt;
+            &lt;li&gt;Item A&lt;/li&gt;
+            &lt;li&gt;Item B&lt;/li&gt;
+        &lt;/ul&gt;
+        </code>
+    </pre>
+    <p>As listas são úteis para organizar informações de forma clara e concisa, melhorando a usabilidade e a leitura da página.</p>
+
+    <h3 id="links">Links  <font color="red" size="1"><a href="#home"> (Voltar)</a></font></h3>
+    <p>Os Links são criados com a tag <code>&lt;a&gt;</code>, que permite a navegação entre páginas da web ou seções dentro de uma mesma página:</p>
+    <pre>
+        <code>&lt;a target="_blank" href="https://www.dio.me"&gt;Visite o site da Dio.me&lt;/a&gt;</code>
+    </pre>
+
+    <h2>Referências</h2>
+    <hr />
+    <p>Abaixo estão algumas referências úteis que foram consultadas para compilar este documento:</p>
+    <ul>
+        <li><a target="_blank" href="https://web.dio.me/track/formacao-html-web-developer">DIO - Formação <abbr title="Hypertext Markup Language">HTML</abbr> Web Developer</a></li>
+        <li><a target="_blank" href="https://www.w3schools.com/html/">W3Schools - HTML Tutorial</a></li>
+        <li><a target="_blank" href="https://developer.mozilla.org/pt-BR/docs/Web/HTML">MDN Web Docs - HTML</a></li>
+        <li><a target="_blank" href="https://www.html.com/">HTML.com - Learn HTML</a></li>
+        <li><a target="_blank" href="https://www.codecademy.com/learn/learn-html">Codecademy - Learn HTML</a></li>
+    </ul>
+
+</body>
+</html>
